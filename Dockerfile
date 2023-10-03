@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ./cmd /app/cmd
 COPY go.mod /app/
 # If importing from outside of stl a go.sum file will be generated
-# COPY go.sum /app/
+COPY go.sum /app/
 
 # Build the Go app
 RUN go mod download
