@@ -7,8 +7,7 @@ This Golang API presentation demo showcases a simple RESTful API built using the
 ### Prerequisites
 
 - Golang installed on your system
-- Docker installed (if you plan to use the provided Docker image)
-- [GoSwagger](https://github.com/go-swagger/go-swagger) installed (for generating scaffoldings)
+- Docker installed (if you plan to use the provided Dockerfile)
 
 ### Installation
 
