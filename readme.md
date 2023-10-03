@@ -65,5 +65,10 @@ docker run -p 8080:8080 api-demo
 
 The API will be accessible at http://localhost:8080.
 
-## API Documentation
-The API documentation can be found in the swagger.yaml file. You can use this Swagger file to generate API documentation or test the API endpoints using tools like Swagger UI or Postman.
+## OpenAPI Documentation
+The API documentation can be found in the swagger.yaml file. You can use this Swagger file to generate API documentation or test the API endpoints using tools like [Swagger UI](https://editor.swagger.io/) or Postman.
+
+## Server Scaffolding
+If you want to generate a server scaffolding for your API based on the Swagger documentation, you can use [go-swagger](https://github.com/go-swagger/go-swagger).
+```bash
+swagger generate server -f swagger.yaml
