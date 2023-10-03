@@ -1,0 +1,49 @@
+swagger: "2.0"
+info:
+  title: Sample API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      summary: Health Check
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: "healthy"
+
+  /post:
+    post:
+      summary: Save a String
+      parameters:
+        - in: body
+          name: body
+          description: String to save
+          required: true
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+      responses:
+        201:
+          description: Created
+        400:
+          description: Bad Request
+
+  /get:
+    get:
+      summary: Retrieve Saved String
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+
